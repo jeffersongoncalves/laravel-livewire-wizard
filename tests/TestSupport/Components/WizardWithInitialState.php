@@ -1,0 +1,32 @@
+<?php
+
+namespace JeffersonGoncalves\LivewireWizard\Tests\TestSupport\Components;
+
+use JeffersonGoncalves\LivewireWizard\Components\WizardComponent;
+use JeffersonGoncalves\LivewireWizard\Tests\TestSupport\Components\Steps\FirstStepComponent;
+use JeffersonGoncalves\LivewireWizard\Tests\TestSupport\Components\Steps\SecondStepComponent;
+
+class WizardWithInitialState extends WizardComponent
+{
+    public function mount(int $order)
+    {
+        $this->order = $order;
+    }
+
+    public function steps(): array
+    {
+        return [
+            FirstStepComponent::class,
+            SecondStepComponent::class,
+        ];
+    }
+
+    public function initialState(): array
+    {
+        return [
+            'first-step' => [
+                'order' => $this->order,
+            ],
+        ];
+    }
+}

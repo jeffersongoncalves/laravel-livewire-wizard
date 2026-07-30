@@ -1,0 +1,71 @@
+{
+    "name": "jeffersongoncalves/laravel-livewire-wizard",
+    "description": "Build multi-step wizards using Livewire 3.",
+    "keywords": [
+        "laravel",
+        "livewire",
+        "wizard",
+        "multi-step-form"
+    ],
+    "homepage": "https://github.com/jeffersongoncalves/laravel-livewire-wizard",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jefferson Gonçalves",
+            "email": "gerson.simao.92@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/contracts": "^11.0|^12.0|^13.0",
+        "illuminate/support": "^11.0|^12.0|^13.0",
+        "livewire/livewire": "^3.0",
+        "spatie/laravel-collection-macros": "^7.13|^8.0",
+        "spatie/laravel-package-tools": "^1.16.1"
+    },
+    "require-dev": {
+        "ext-dom": "*",
+        "larastan/larastan": "^3.0",
+        "laravel/pint": "^1.21",
+        "nunomaduro/collision": "^8.0",
+        "orchestra/testbench": "^9.0|^10.0|^11.0",
+        "pestphp/pest": "^3.0|^4.0",
+        "pestphp/pest-plugin-laravel": "^3.0|^4.0",
+        "spatie/pest-plugin-snapshots": "^2.0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "JeffersonGoncalves\\LivewireWizard\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JeffersonGoncalves\\LivewireWizard\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
+        "analyse": "vendor/bin/phpstan analyse",
+        "format": "vendor/bin/pint",
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JeffersonGoncalves\\LivewireWizard\\WizardServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

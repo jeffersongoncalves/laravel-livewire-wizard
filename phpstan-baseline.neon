@@ -1,0 +1,61 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Call to function is_a\(\) with arguments class\-string\<JeffersonGoncalves\\LivewireWizard\\Components\\StepComponent\>, ''JeffersonGoncalves\\\\LivewireWizard\\\\Components\\\\StepComponent'' and true will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: src/Components/WizardComponent.php
+
+		-
+			message: '#^Call to function is_a\(\) with arguments class\-string\<JeffersonGoncalves\\LivewireWizard\\Support\\State\>, ''JeffersonGoncalves\\\\LivewireWizard\\\\Support\\\\State'' and true will always evaluate to true\.$#'
+			identifier: function.alreadyNarrowedType
+			count: 1
+			path: src/Components/WizardComponent.php
+
+		-
+			message: '#^Parameter \#1 \$view of function view expects view\-string\|null, string given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/Components/WizardComponent.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: src/Exceptions/NoNextStep.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 1
+			path: src/Exceptions/NoPreviousStep.php
+
+		-
+			message: '#^Unsafe usage of new static\(\)\.$#'
+			identifier: new.static
+			count: 2
+			path: src/Exceptions/StepDoesNotExist.php
+
+		-
+			message: '#^Access to an undefined property Livewire\\Features\\SupportTesting\\Testable\:\:\$effects\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Support/EventEmitter.php
+
+		-
+			message: '#^Call to an undefined method Livewire\\Component\:\:getCurrentStepState\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/WizardServiceProvider.php
+
+		-
+			message: '#^Call to an undefined method Livewire\\Component\:\:mountMountsWizard\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/WizardServiceProvider.php
+
+		-
+			message: '#^Call to an undefined method Livewire\\Features\\SupportTesting\\Testable\:\:emitEvents\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/WizardServiceProvider.php
