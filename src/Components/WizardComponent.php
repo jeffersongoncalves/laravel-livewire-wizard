@@ -11,6 +11,7 @@ use JeffersonGoncalves\LivewireWizard\Exceptions\NoStepsReturned;
 use JeffersonGoncalves\LivewireWizard\Exceptions\StepDoesNotExist;
 use JeffersonGoncalves\LivewireWizard\Support\ComponentHydrator;
 use JeffersonGoncalves\LivewireWizard\Support\State;
+use Livewire\Attributes\Locked;
 use Livewire\Attributes\On;
 use Livewire\Component;
 use Livewire\Drawer\Utils;
@@ -20,8 +21,10 @@ abstract class WizardComponent extends Component
 {
     use MountsWizard;
 
+    #[Locked]
     public array $allStepState = [];
 
+    #[Locked]
     public ?string $currentStepName = null;
 
     /** @return array<int, class-string<StepComponent>> */

@@ -5,6 +5,7 @@ namespace JeffersonGoncalves\LivewireWizard\Components;
 use JeffersonGoncalves\LivewireWizard\Components\Concerns\StepAware;
 use JeffersonGoncalves\LivewireWizard\Support\ComponentHydrator;
 use JeffersonGoncalves\LivewireWizard\Support\State;
+use Livewire\Attributes\Locked;
 use Livewire\Component;
 use Livewire\Mechanisms\ComponentRegistry;
 
@@ -12,13 +13,17 @@ abstract class StepComponent extends Component
 {
     use StepAware;
 
+    #[Locked]
     public ?string $wizardClassName = null;
 
+    #[Locked]
     public array $allStepNames = [];
 
+    #[Locked]
     public array $allStepsState = [];
 
     /** @var class-string<State> */
+    #[Locked]
     public string $stateClassName = State::class;
 
     public function dispatchDehydrated($event, ...$params)
