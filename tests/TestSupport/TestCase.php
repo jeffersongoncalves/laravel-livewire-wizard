@@ -76,7 +76,6 @@ class TestCase extends Orchestra
             $domNode = $document->getElementById($elementId);
 
             return Str::of($document->saveHTML($domNode))
-                ->replace("\n", "\r\n")
                 ->trim()
                 ->toString();
         });
