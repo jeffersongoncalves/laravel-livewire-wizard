@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A0A0B"/>
+      <stop offset="100%" stop-color="#18181B"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FBBF24" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#FBBF24" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#27272A" stroke-width="0.6"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.4"/>
+  <ellipse cx="950" cy="310" rx="410" ry="290" fill="url(#glow)"/>
+
+  <!-- top label -->
+  <circle cx="84" cy="67" r="4" fill="#FBBF24"/>
+  <text x="102" y="72" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="500" letter-spacing="2" fill="#A1A1AA">LARAVEL PACKAGE</text>
+
+  <!-- title -->
+  <text x="80" y="220" font-family="Inter, system-ui, sans-serif" font-size="76" font-weight="800" letter-spacing="-2" fill="#FAFAFA">Livewire</text>
+  <text x="80" y="300" font-family="Inter, system-ui, sans-serif" font-size="76" font-weight="800" letter-spacing="-2" fill="#FAFAFA">Wizard</text>
+
+  <!-- tagline -->
+  <text x="80" y="356" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="600" fill="#FBBF24">Multi-step wizards for Livewire 3</text>
+
+  <!-- description -->
+  <text x="80" y="396" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="400" fill="#A1A1AA">Each step is its own Livewire component.</text>
+  <text x="80" y="420" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="400" fill="#A1A1AA">State flows automatically between steps.</text>
+
+  <!-- footer pills -->
+  <g font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="500">
+    <rect x="80" y="545" width="112" height="30" rx="15" fill="#18181B" stroke="#27272A"/>
+    <text x="92" y="565" fill="#FAFAFA">Livewire 3</text>
+
+    <rect x="204" y="545" width="140" height="30" rx="15" fill="#18181B" stroke="#27272A"/>
+    <text x="216" y="565" fill="#FAFAFA">Laravel 11-13</text>
+
+    <rect x="356" y="545" width="104" height="30" rx="15" fill="#18181B" stroke="#27272A"/>
+    <text x="368" y="565" fill="#FAFAFA">PHP 8.2+</text>
+
+    <rect x="472" y="545" width="66" height="30" rx="15" fill="#18181B" stroke="#27272A"/>
+    <text x="484" y="565" fill="#FAFAFA">MIT</text>
+  </g>
+
+  <!-- username -->
+  <text x="1120" y="595" text-anchor="end" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="500" fill="#52525B">@jeffersongoncalves</text>
+
+  <!-- right visual: kanban-style wizard steps -->
+  <g font-family="Inter, system-ui, sans-serif">
+    <!-- column 1: Cart (done) -->
+    <rect x="680" y="150" width="130" height="330" rx="12" fill="#18181B" stroke="#27272A"/>
+    <text x="700" y="182" font-size="13" font-weight="600" fill="#71717A">1. CART</text>
+    <rect x="698" y="200" width="94" height="54" rx="8" fill="#0A0A0B" stroke="#27272A"/>
+    <circle cx="712" cy="216" r="6" fill="#10B981"/>
+    <rect x="726" y="211" width="52" height="6" rx="3" fill="#3F3F46"/>
+    <rect x="726" y="223" width="36" height="6" rx="3" fill="#27272A"/>
+    <rect x="698" y="266" width="94" height="54" rx="8" fill="#0A0A0B" stroke="#27272A"/>
+    <circle cx="712" cy="282" r="6" fill="#10B981"/>
+    <rect x="726" y="277" width="52" height="6" rx="3" fill="#3F3F46"/>
+    <rect x="726" y="289" width="36" height="6" rx="3" fill="#27272A"/>
+
+    <!-- column 2: Address (active) -->
+    <rect x="828" y="130" width="150" height="370" rx="12" fill="#18181B" stroke="#FBBF24" stroke-width="1.5"/>
+    <text x="848" y="162" font-size="13" font-weight="600" fill="#FBBF24">2. ADDRESS</text>
+    <rect x="846" y="180" width="114" height="44" rx="8" fill="#0A0A0B" stroke="#3F3F46"/>
+    <rect x="860" y="196" width="70" height="8" rx="4" fill="#52525B"/>
+    <rect x="846" y="236" width="114" height="44" rx="8" fill="#0A0A0B" stroke="#3F3F46"/>
+    <rect x="860" y="252" width="86" height="8" rx="4" fill="#52525B"/>
+    <rect x="846" y="292" width="114" height="44" rx="8" fill="url(#amber)" opacity="0.9"/>
+    <rect x="860" y="308" width="60" height="8" rx="4" fill="#18181B"/>
+
+    <!-- column 3: Confirm (next) -->
+    <rect x="998" y="170" width="130" height="290" rx="12" fill="#18181B" stroke="#27272A"/>
+    <text x="1018" y="202" font-size="13" font-weight="600" fill="#71717A">3. CONFIRM</text>
+    <rect x="1016" y="220" width="94" height="54" rx="8" fill="#0A0A0B" stroke="#27272A" opacity="0.6"/>
+    <rect x="1030" y="240" width="60" height="6" rx="3" fill="#3F3F46"/>
+    <rect x="1016" y="286" width="94" height="54" rx="8" fill="#0A0A0B" stroke="#27272A" opacity="0.6"/>
+    <rect x="1030" y="306" width="60" height="6" rx="3" fill="#3F3F46"/>
+  </g>
+</svg>

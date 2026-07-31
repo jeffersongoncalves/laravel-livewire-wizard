@@ -1,7 +1,10 @@
 # Laravel Livewire Wizard
 
+![Laravel Livewire Wizard](banners/laravel-livewire-wizard.png)
+
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/jeffersongoncalves/laravel-livewire-wizard.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/laravel-livewire-wizard)
 [![Tests](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/laravel-livewire-wizard/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/jeffersongoncalves/laravel-livewire-wizard/actions/workflows/run-tests.yml)
+[![PHPStan](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/laravel-livewire-wizard/phpstan.yml?branch=main&label=phpstan&style=flat-square)](https://github.com/jeffersongoncalves/laravel-livewire-wizard/actions/workflows/phpstan.yml)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/jeffersongoncalves/laravel-livewire-wizard/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/jeffersongoncalves/laravel-livewire-wizard/actions/workflows/fix-php-code-style-issues.yml)
 [![Total Downloads](https://img.shields.io/packagist/dt/jeffersongoncalves/laravel-livewire-wizard.svg?style=flat-square)](https://packagist.org/packages/jeffersongoncalves/laravel-livewire-wizard)
 [![License](https://img.shields.io/packagist/l/jeffersongoncalves/laravel-livewire-wizard.svg?style=flat-square)](LICENSE.md)
