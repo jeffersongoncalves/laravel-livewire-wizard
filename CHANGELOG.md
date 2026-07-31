@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-livewire-wizard` will be documented in this file.
 
+## 1.1.1 - 2026-07-31
+
+### Fix
+
+CI `run-tests` was failing on every push since the initial release: the `htmlContent()` test macro (`tests/TestSupport/TestCase.php`) hardcoded a `\n` → `\r\n` replace on rendered HTML before comparing against snapshot fixtures, which are stored with LF line endings. This always mismatched on Linux CI runners.
+
+Removed the forced CRLF conversion — `DOMDocument::saveHTML()` already emits LF consistently, matching the committed fixtures.
+
 ## 1.1.0 - 2026-07-31
 
 ### Security fix
